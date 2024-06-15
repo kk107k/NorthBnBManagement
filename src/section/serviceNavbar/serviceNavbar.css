@@ -1,0 +1,38 @@
+.service-navbar__container li{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin: 2px;
+    background-color: #e1cc99;
+    color: white;
+    width: 220px;
+    height: 37px;
+    
+}
+
+.service-navbar__container a {
+    color: #e3895f;
+    font-size: 0.7rem;
+}
+
+.service-navbar__container li:hover{
+    border-left: 4px solid #35d0ec;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* @media screen and (max-width: 768px) {
+    .service-navbar__container li{
+        width: 100px;
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+} */
+
+@media screen and (max-width: 650px) {
+    .service-navbar__container li{
+        width: 100%;
+    }
+}
+    

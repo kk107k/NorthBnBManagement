@@ -1,0 +1,22 @@
+.industries-page-heading__container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1000px;
+    height: 100%;
+    text-align: center;
+}
+
+.industries-page-heading__container h1 {
+    font-size: 1.6rem;
+    color: var(--color-text-darkblue);
+    margin-bottom: 20px;
+}
+
+.industries-page-heading__container p {
+    font-size: 0.7rem;
+    opacity: 0.8;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}

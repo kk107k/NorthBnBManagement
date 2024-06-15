@@ -1,0 +1,107 @@
+.contact__container-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.contact__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+}
+
+.contact__container-left_title h1,
+.contact__container-left_title p{
+    letter-spacing: 2px;
+    margin: 0px 0px 20px 0px;
+}
+.contact__container-left-details a {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+    cursor: pointer;
+}
+
+.contact__container-left-details img{
+    width: 5%;
+    margin-right: 10px;
+}
+
+.contact__container-left,
+.contact__container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 20px;
+    width: 100%;
+}
+
+.contact__container-form-name ,
+.contact__container-form-contact_info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.contact__container-form-inputs input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid lightgrey; 
+}
+
+.contact__container-form-inputs input:hover {
+    border: 1px solid rgb(224, 224, 224);
+}
+.contact__container-form-inputs input:focus {
+    border: 1px solid rgb(0, 0, 0);
+}
+.contact__container-form-message {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.contact__container-form-message textarea{ 
+    width: 100%;
+    height: 90px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid lightgrey; 
+}
+
+.contact__container-form-submit {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contact__container-form-submit input{
+    height: 40px;
+    width: max-content;
+    padding: 0px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 0.1s;
+    background-color: transparent;
+}
+
+.contact__container-form-submit input:hover{
+    background-color: rgb(248, 248, 248);
+    cursor: pointer;
+}
+
+.contact__container-form-submit input:active{
+    color: white;
+    background-color: black;
+    
+    
+}

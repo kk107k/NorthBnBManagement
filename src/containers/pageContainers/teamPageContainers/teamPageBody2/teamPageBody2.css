@@ -1,0 +1,38 @@
+.team-page-body-two__container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.team-page-body2__title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px 10px;
+    overflow: hidden;
+}
+
+.team-page-body2__title h1{
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: var(--color-navbar);
+    margin: 0px 0px 10px 3px;
+
+}
+
+.team-page-body2__content {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    gap: 0px; /* Adjust the gap value as needed */
+    margin: 0px 10px;
+    width: 100%;
+}
+
+@media screen and (max-width: 495px) {
+    .team-page-body2__content {
+        grid-template-columns: repeat(2, 0fr);
+    }
+}

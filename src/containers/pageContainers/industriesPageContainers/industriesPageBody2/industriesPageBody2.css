@@ -1,0 +1,22 @@
+.industries-page-body-two__container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1000px;
+    height: 100%;
+}
+
+.industries-page-body-two__container h1{
+    font-size: 1.6rem;
+    width: 100%;
+    text-transform: uppercase;
+    color: var(--color-text-darkblue);
+    margin-bottom: 15px;
+}
+
+.industries-page-body-two__container p {
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+    opacity: 0.8;
+}

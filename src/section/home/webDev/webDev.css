@@ -1,0 +1,52 @@
+
+.webdev__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    }
+
+
+.webdev__container-left {
+    width: 40%;
+    margin-right: 100px;
+}
+
+.webdev__container-left h4,
+.webdev__container-left h1 {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.webdev__container-right {
+    width: 50%;
+}
+.webdev__container-right img{
+    width: 100%;
+}
+
+.webdev__container-left p {
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.webdev__container-left-button {
+    width: max-content;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+.webdev__container-left-button:hover {
+    transition: 0.2s;
+    background-color: black;
+    color: white;
+}

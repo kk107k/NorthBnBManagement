@@ -1,0 +1,11 @@
+export {default as Home} from './Home';
+export {default as TeamPage} from './TeamPage';
+export {default as ContactPage} from './ContactPage';
+export {default as Services} from './Services';
+export {default as What} from './What';
+export {default as Why} from './Why';
+export {default as CustomerSupport} from './ServicePages/CustomerSupport';
+export {default as HouseCleaning} from './ServicePages/HouseCleaning';
+export {default as Maintenance} from './ServicePages/Maintenance';
+export {default as OccupancyRate} from './ServicePages/OccupancyRate';
+export {default as PremiumHosting} from './ServicePages/PremiumHosting';

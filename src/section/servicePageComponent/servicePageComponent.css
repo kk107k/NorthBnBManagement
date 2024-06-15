@@ -1,0 +1,33 @@
+.service-page-component__container {
+    color: var(--color-navbar);
+}
+.service-page-component__container h1{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.service-page-component__container p {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.3rem;
+    margin: 10px 0px;
+    
+}
+
+.service-page-component__container li{
+    margin-bottom: 3px;
+}
+
+.service-page-component__container li::before {
+    content: "•";
+    display: inline-block;
+    font-size: 1.1rem;
+    width: 10px; 
+ }
+
+ .service-page-component__container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+ }

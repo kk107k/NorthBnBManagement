@@ -1,0 +1,43 @@
+.team-page-body-one__container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.team-page-body-one__container h1{
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: var(--color-navbar);
+    margin: 0px 0px 10px 3px;
+}
+
+.team-page-body-one__container-founders,
+.team-page-body-one__container-advisory {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px 10px;
+    overflow: hidden;
+}
+
+
+.team-page-body-one__container-component {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-top: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 694px) {
+    .team-page-body-one__container {
+        flex-direction: column;
+    }
+    .team-page-body-one__container-founders,
+    .team-page-body-one__container-advisory {
+        width: 100%;
+    }
+}
