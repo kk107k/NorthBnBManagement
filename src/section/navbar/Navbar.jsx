@@ -11,7 +11,17 @@ const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const options = [
-    'test',
+    'About us',
+    'ContactUs',
+    'CustomerSupport',
+    'HouseCleaning',
+    'Maintenance',
+    'OccupancyRate',
+    'PremiumHosting',
+    'Services',
+    'Team',
+    'What',
+    'Why',
   ];
 
   useEffect(() => {
@@ -132,27 +142,49 @@ const Navbar = () => {
             </li>
             <li>
               <Link className="desktop-link">
-                Services <i class="fa-solid fa-caret-down"></i>
+                Services <i class="fa-solid fa-chevron-down" style={{color: "white"}}></i>
               </Link>
               <input type="checkbox" id="show-features" name="show-features" />
-              <label htmlFor="show-features">Services <i class="fa-solid fa-caret-down"></i></label>
+              <label htmlFor="show-features">Services <i class="fa-solid fa-chevron-down" style={{color: "white"}}></i></label>
               <ul>
-                <li>
-                  <Link to="/test" className={location.pathname === '/test' ? 'active' : ''}>
-                    fill
+                <li className='dropdown'>
+                  <Link to="/houseCleaning" className={location.pathname === '/houseCleaning' ? 'active' : ''}>
+                    House Cleaning
+                  </Link>
+                  <Link to="/maintenance" className={location.pathname === '/maintenance' ? 'active' : ''}>
+                    Maintenance
+                  </Link>
+                  <Link to="/occupancyRate" className={location.pathname === '/occupancyRate' ? 'active' : ''}>
+                    Occupancy Rate
+                  </Link>
+                  <Link to="/premiumHosting" className={location.pathname === '/premiumHosting' ? 'active' : ''}>
+                    Premium Hosting
+                  </Link>
+                  <Link to="/customerSupport" className={location.pathname === '/customerSupport' ? 'active' : ''}>
+                    Customer Support
                   </Link>
                 </li>
               </ul>
+            </li>
+            <li>
+              <Link to="/AboutUs" className={location.pathname === '/AboutUs' ? 'active' : ''}>
+                About Us
+              </Link>
             </li>
             <li>
               <Link to="/contactUs" className={location.pathname === '/contactUs' ? 'active' : ''}>
                 Contact Us
               </Link>
             </li>
+            <li>
+              <Link to="/team" className={location.pathname === '/team' ? 'active' : ''}>
+                Team
+              </Link>
+            </li>
           </ul>
         </div>
         <label htmlFor="show-search" className="search-icon">
-          <i className="fas fa-search"></i>
+          <i className="fas fa-search" style={{color: "white",}}></i>
         </label>
         <form className="search-box" onSubmit={handleFormSubmit}>
           <input

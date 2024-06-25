@@ -1,0 +1,8 @@
+.big_text_container {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.big_text_container h1 {
+    margin-bottom: 20px;
+}

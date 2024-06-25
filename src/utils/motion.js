@@ -41,7 +41,7 @@ export const navVariants = {
       return {
         hidden: {
           x: direction === "left" ? "-120%" : direction === "right" ? "120%" : 0,
-          y: direction === "up" ? "120%" : direction === "down" ? "120%" : 0,
+          y: direction === "up" ? "120%" : direction === "down" ? "-120%" : 0,
         },
         show: {
           x: 0,

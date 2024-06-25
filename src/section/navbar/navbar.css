@@ -1,14 +1,10 @@
-.wrapper{
+.wrapper {
   background: var(--color-navbar-scroll);
   position: fixed;
   width: 100%;
 }
 
-.links i{
-  margin-left: 5px;
-  color: white;
-}
-.wrapper nav{
+.wrapper nav {
   position: relative;
   display: flex;
   max-width: calc(100% - 200px);
@@ -18,31 +14,30 @@
   justify-content: space-between;
   overflow: hidden;
   animation: fadeDown 1s ease-in-out;
-  
 }
-nav .content{
+
+nav .content {
   display: flex;
   align-items: center;
 }
-nav .content .links{
+
+nav .content .links {
   margin-left: 80px;
   display: flex;
 }
 
-
 .content .logo img {
-    margin-top: 10px;
-    width: 200px;
+  margin-top: 10px;
+  width: 200px;
 }
 
-
-.content .links li{
+.content .links li {
   list-style: none;
-  line-height: 70px;
 }
+
 .content .links li a,
-.content .links li label{
-  color: rgb(255, 255, 255);
+.content .links li label {
+  color: white;
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 500;
@@ -50,15 +45,17 @@ nav .content .links{
   transition: all 0.3s ease;
 }
 
-.content .links li label{
+.content .links li label {
   display: none;
 }
-.content .links li a:hover{
+
+.content .links li a:hover {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   transition: 0s;
 }
+
 .wrapper .search-icon,
-.wrapper .menu-icon{
+.wrapper .menu-icon {
   color: #fff;
   font-size: 18px;
   cursor: pointer;
@@ -66,19 +63,21 @@ nav .content .links{
   width: 70px;
   text-align: center;
 }
+
 .wrapper .search-icon {
   color: #f2f2f2;
 }
 
-.wrapper .menu-icon{
+.wrapper .menu-icon {
   display: none;
 }
-.wrapper #show-search:checked ~ .search-icon i::before{
+
+.wrapper #show-search:checked ~ .search-icon i::before {
   content: "\f00d";
   color: #fff;
 }
 
-.wrapper .search-box{
+.wrapper .search-box {
   position: absolute;
   height: 100%;
   max-width: calc(100% - 50px);
@@ -86,22 +85,30 @@ nav .content .links{
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
-
 }
-.wrapper #show-search:checked ~ .search-box{
+
+.wrapper #show-search:checked ~ .search-box {
   opacity: 1;
   pointer-events: auto;
 }
-.search-box input{
+
+.search-box input {
   width: 100%;
   height: 100%;
   border: none;
   outline: none;
   font-size: 15px;
   color: white;
-  background: var(--color-navbar);
+  background: transparent;
   padding: 0 100px 0 15px;
 }
+
+/* New CSS to hide logo and links when the search box is checked */
+.wrapper #show-search:checked ~  .content .logo img,
+.wrapper #show-search:checked ~  .content .links {
+  display: none;
+}
+
 .search-box input::placeholder{
   color: #f2f2f2;
 }
@@ -112,7 +119,7 @@ nav .content .links{
   transform: translateY(-50%);
   line-height: 60px;
   width: 70px;
-  background: var(--color-navbar);
+  background: var(--color-navbar-scroll);
   border-bottom:2px solid rgb(255, 255, 255, 0.5);
   border: none;
   outline: none;
@@ -130,7 +137,8 @@ nav .content .links{
   position: fixed;
   top: 70px;
   z-index: 999;
-  background-color: var(--color-navbar);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
   opacity: 0;
   visibility: hidden;
 }
@@ -142,6 +150,7 @@ nav .content .links{
 }
 .content .links ul li a{
   display: block;
+  color: black;
   width: 100%;
   line-height: 30px;
   border-radius: 0px!important;
@@ -160,6 +169,7 @@ nav .content .links{
 
 .search-results ul{
   border-top:rgb(255, 255, 255, 0.5) 1px solid;
+  border-radius: 10px;
   position: fixed;
   width: 84%;
   height: 150px;
@@ -168,16 +178,14 @@ nav .content .links{
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background-color: var(--color-navbar);
+  background-color: rgba(255, 255, 255, 0.900);
 }
 
 .search-results ul a{
   width: 100%;
   margin: 10px 0px;
-  height: 40px;
   color: white;
   overflow: hidden;
-  border-bottom: rgb(255, 255, 255, 0.5) 1px solid;
 }
 
 

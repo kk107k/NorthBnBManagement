@@ -1,11 +1,10 @@
 import React from 'react'
-import { Slider, Meeting, Partners, Marketing, Contact, Content, WebDev, Facts, Packages, Services, Homepage, Testimonials} from '../section'
+import { Slider, Estimator, Meeting, Partners, Marketing, Contact, Content, WebDev, Facts, Packages, Services, Homepage, Testimonials} from '../section'
 
 const Home = () => {
   return (
     <div>
       <Homepage />
-      <Slider />
       <Marketing />
       <Content />
       <WebDev />
@@ -15,7 +14,7 @@ const Home = () => {
       <Meeting />
       <Packages />
       <Contact />
-
+      <Estimator />
     </div>
   )
 }

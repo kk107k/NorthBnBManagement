@@ -1,0 +1,6 @@
+.left_aligned_text_container {
+    border-left: 1.5px solid rgb(0, 0, 0, 0.5);
+    height: 45px;
+    padding-left: 20px;
+    width: 50%;
+}

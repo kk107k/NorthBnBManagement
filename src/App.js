@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import { Home, TeamPage, ContactPage, CustomerSupport, HouseCleaning, Maintenance, OccupancyRate, PremiumHosting, Services, What, Why } from './pages'
 import { Navbar } from './section'
@@ -6,6 +6,11 @@ import './App.css'
 import { Route, Routes } from "react-router-dom"
 
 const App = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className='App'>
     <div className='Navbar'>

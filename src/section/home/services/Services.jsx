@@ -6,7 +6,7 @@ import {servicesData} from '../../../constants'
 const Services = () => {
   
   return (
-    <div className='services__container color_bg-lightblue container'>
+    <div className='services__container color_bg-lightblue container' id='services'>
       <div className='services__container-text'> 
         <h1>What You Get with</h1>
         <h2>North.bnb's Short Term Management Service</h2>

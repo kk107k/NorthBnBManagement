@@ -16,6 +16,7 @@ export {default as Contact} from './home/contactUs/ContactUs'
 export {default as Facts} from './home/facts/Facts'
 export {default as Packages} from './home/packages/Packages' 
 export {default as Testimonials} from './home/testimonials/Testimonials'
+export {default as Estimator} from './estimator/Estimator'
 
 
 export {default as ContactUs} from './contact/Contact'
