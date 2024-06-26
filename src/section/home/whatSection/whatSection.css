@@ -1,0 +1,13 @@
+.whatSection__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    }
+
+.whatSection__container-right {
+    width: 50%;
+}
+
+.whatSection__container-right img {
+    width: 100%;
+}

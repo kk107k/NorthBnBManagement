@@ -1,5 +1,5 @@
 import React from 'react'
-import './webDev.css'
+import './brochure.css'
 import { motion } from 'framer-motion';
 import { slideIn, staggerContainer } from '../../../utils/motion';
 import { Who } from '../../../assets';

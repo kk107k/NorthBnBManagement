@@ -1,0 +1,12 @@
+.content__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    }
+
+.content__container-left {
+    width: 50%;
+}
+.content__container-left img{
+    width: 100%;
+}

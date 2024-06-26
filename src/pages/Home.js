@@ -1,13 +1,13 @@
 import React from 'react'
-import { Slider, Estimator, Meeting, Partners, Marketing, Contact, Content, WebDev, Facts, Packages, Services, Homepage, Testimonials} from '../section'
+import { Slider, Estimator, Meeting, Partners, WhatSection, Contact, WhySection, Brochure, Facts, Packages, Services, Homepage, Testimonials, Footer} from '../section'
 
 const Home = () => {
   return (
     <div>
       <Homepage />
-      <Marketing />
-      <Content />
-      <WebDev />
+      <WhatSection />
+      <WhySection />
+      <Brochure />
       <Partners />
       <Services />
       <Testimonials />
@@ -15,6 +15,7 @@ const Home = () => {
       <Packages />
       <Contact />
       <Estimator />
+      <Footer />
     </div>
   )
 }
