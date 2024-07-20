@@ -8,6 +8,7 @@ import ambience1 from '../assets/ambience/ambience1.png'
 import ambience2 from '../assets/ambience/ambience2.png'
 import ambience3 from '../assets/ambience/ambience3.png'
 import ambience4 from '../assets/ambience/ambience4.jpg'
+import ambience5 from '../assets/ambience/ambience5.jpg'
 
 // services logos
 import dashboard from '../assets/servicesIcon/data.png'
@@ -66,7 +67,8 @@ export {
     ambience2,
     ambience3,
     ambience4,
-
+    ambience5,
+    
     //services logos
     dashboard,
     increase,

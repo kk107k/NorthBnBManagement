@@ -15,7 +15,7 @@ const Marketing = () => {
         viewport={{ once: false, amount: 0.25 }}
         className='whatSection__container'
       >
-        <DescriptionBox slideDirection='left' heading='What is North.bnb?' subheading='We are the best' text='We are the best at what we do. We provide the best services for our customers. We are the best at what we do. We provide the best services for our customers.' redirect='/what' />
+        <DescriptionBox slideDirection='left' heading='What are Short-term rentals?' subheading='Flexible booking' text='Short-term rentals are properties rented out for short durations, often to travelers and tourists, through platforms like Airbnb and VRBO. These rentals offer flexibility and comfort for guests.' redirect='/what' />
         <div className='whatSection__container-right'>
           <motion.img variants={slideIn('right', 'tween', 0, 1)} src={What} alt='Your Browser Does Not Support Images' />
         </div>

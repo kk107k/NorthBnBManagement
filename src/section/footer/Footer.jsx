@@ -69,8 +69,8 @@ const Footer = () => {
                 <a href='https://www.google.com/maps/dir//Al+Safa+Buildings+-+Sheikh+Zayed+Rd+-+Dubai+-+United+Arab+Emirates/@25.1776728,55.2106686,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3e5f69e8650a6b71:0x3e8f3a65ac153a10!2m2!1d55.2456883!2d25.1775992?entry=ttu'>
                 <i class="fa-regular fa-location-dot" style={{color: '#ffffff'}}></i>
                 <p>
-                    Office 123, 1st Floor,
-                    Mardoof Building, Al Safa 1,
+                    Office 2404, 24th floor,
+                    Fairmont Dubai, Al badaa,
                     Sheikh Zayed Road,
                     Dubai,
                     United Arab Emirates
@@ -80,17 +80,17 @@ const Footer = () => {
               <div className='footer__container-content-information-phone'>
                 <a href='tel:+971-4-564%206090%20%20%20'>
                   <i class="fa-regular fa-phone"></i>
-                  <p>+971-4-564 6090</p>
+                  <p>+971-58-588-5892</p>
                   </a>
               </div>
               <div className='footer__container-content-information-email'>
                 <a href='mailto:inquiry@emcmp.com'>
                 <i class="fa-regular fa-envelope"></i>
-                  <p>inquiry@emcmp.com</p>
+                  <p>inquiry@casabnb.com</p>
                   </a>
               </div>
               <div className='footer__container-content-information-linkedin'>
-              <a href='https://www.linkedin.com/company/emcmpuae/' id='linkedin'>
+              <a href='https://www.linkedin.com/company/casabnbmanagement/' id='linkedin'>
               <i class="fa-brands fa-linkedin"></i>
               </a>
               </div>
@@ -98,14 +98,12 @@ const Footer = () => {
         <div className='footer__container-content-service-and-link-and-newsletter'>
         <div className='footer__container-content-services'>
           <h1>Our Services</h1>
-          <Link to='/corporate-advisory'>{arrow} <p>Corporate Advisory</p></Link>
-          <Link to='/corporate-finance'>{arrow} <p>Corporate Finance</p></Link>
-          <Link to='/risk-advisory'>{arrow} <p>Risk Advisory</p></Link>
-          <Link to='/Strategic-CEO-and-CFO-Services'>{arrow} <p>Strategic CEO & CFO Services</p></Link>
-          <Link to='/Transation-Management-And-M-And-A'>{arrow} <p>Transaction Management and M & A</p></Link>
-          <Link to='/ESG-Services'>{arrow} <p>ESG services</p></Link>
-          <Link to='/Technology'>{arrow} <p>Technology</p></Link>
-          </div>
+          <Link to='/houseCleaning'>{arrow} <p>House Cleaning</p></Link>
+<Link to='/maintenance'>{arrow} <p>Maintenance</p></Link>
+<Link to='/occupancyRate'>{arrow} <p>Occupancy Rate</p></Link>
+<Link to='/premiumHosting'>{arrow} <p>Premium Hosting</p></Link>
+<Link to='/customerSupport'>{arrow} <p>Customer Support</p></Link>
+</div>
         <div className='footer__container-content-links'>
           <h1>Quick Links</h1>
           <Link to='/'>{arrow} <p>Home</p></Link>

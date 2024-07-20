@@ -18,7 +18,7 @@ const ContentCreate = () => {
         <div className='content__container-left'>
           <motion.img variants={slideIn('left', 'tween', 0, 1)} src={Why} alt='content' />
         </div>
-        <DescriptionBox slideDirection='right' heading='Why North.bnb?' subheading='We are the best' text='We are the best at what we do. We provide the best services for our customers. We are the best at what we do. We provide the best services for our customers.' redirect='/Why' />
+        <DescriptionBox slideDirection='right' heading='Why do short term rentals?' subheading='Significant gain' text='Short-term renting allows YOU to optimize pricing, respond to market trends, and maximize occupancy rates, ultimately boosting overall profitability.' redirect='/Why' />
       </motion.div>
     </div>
   );
