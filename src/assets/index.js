@@ -1,3 +1,13 @@
+// main logo 
+import logoBlack from '../assets/logoBlack.png'
+import logoWhite from '../assets/logoWhite.png'
+
+
+// ambience photos
+import ambience1 from '../assets/ambience/ambience1.png'
+import ambience2 from '../assets/ambience/ambience2.png'
+import ambience3 from '../assets/ambience/ambience3.png'
+import ambience4 from '../assets/ambience/ambience4.jpg'
 
 // services logos
 import dashboard from '../assets/servicesIcon/data.png'
@@ -46,6 +56,16 @@ import Face2 from '../assets/testimonialsAssets/face2.jpg'
 import Face3 from '../assets/testimonialsAssets/face3.jpg'
 
 export {
+
+    //main logo
+    logoBlack,
+    logoWhite,
+
+    //ambience images
+    ambience1,
+    ambience2,
+    ambience3,
+    ambience4,
 
     //services logos
     dashboard,

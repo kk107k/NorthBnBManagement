@@ -1,30 +1,45 @@
-const applyScrollEffect = () => {
+const applyScrollEffect = (setLogo) => {
   const content = document.querySelector('.wrapper');
   const scrollTrigger = 100;
-  
+  const transitionStyle = '0.2s ease-in-out';
+  const searchBoxInput = document.querySelector('.search-box input');
+
   const handleScroll = () => {
     const scrollY = window.scrollY || window.pageYOffset;
-    const links = document.querySelectorAll('.content .links li a'); // Select all <a> tags inside .wrapper
+    const links = document.querySelectorAll('.wrapper .links li a');
+    const icons = document.querySelectorAll('.wrapper i'); // Select all <i> tags inside the wrapper
 
     if (scrollY > scrollTrigger) {
-      content.style.backgroundColor = 'var(--color-navbar)'; // Change this to the desired color
-      content.style.transition = '0.2s ease-in-out';
+      content.style.backgroundColor = 'var(--color-navbar)';
+      content.style.transition = transitionStyle;
+      setLogo('black');
       links.forEach(link => {
-        link.style.color = 'black'; // Change link color to white
-        link.style.transition = '0.2s ease-in-out';
+        link.style.color = 'black';
+        link.style.transition = transitionStyle;
       });
+      icons.forEach(icon => {
+        icon.style.color = 'black';
+        icon.style.transition = transitionStyle;
+      });
+      searchBoxInput.style.setProperty('--placeholder-color', '#333'); // Change placeholder color to dark grey
     } else {
-      content.style.backgroundColor = 'var(--color-navbar-scroll)'; // Change this to the initial color
-      content.style.transition = '0.2s ease-in-out';
+      content.style.backgroundColor = 'var(--color-navbar-scroll)';
+      content.style.transition = transitionStyle;
+      setLogo('white');
       links.forEach(link => {
-        link.style.color = 'white'; // Reset link color to initial
-        link.style.transition = '0.2s ease-in-out';
+        link.style.color = 'white';
+        link.style.transition = transitionStyle;
       });
+      icons.forEach(icon => {
+        icon.style.color = 'white';
+        icon.style.transition = transitionStyle;
+      });
+      searchBoxInput.style.setProperty('--placeholder-color', '#f2f2f2'); // Reset placeholder color to initial
     }
   };
-  
+
   window.addEventListener('scroll', handleScroll);
-  
+
   return () => {
     window.removeEventListener('scroll', handleScroll);
   };

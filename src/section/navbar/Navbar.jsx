@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import '../../motion.css';
 import './navbar.css';
-import image from '../../assets/northbnb_logo.png';
+import { logoBlack, logoWhite } from '../../assets';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import applyScrollEffect from '../../utils/scrollEffect'; // Import the scroll effect
-
-
 
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
+  const [logo, setLogo] = useState(logoWhite); // State to manage the logo
   const options = [
     'About us',
     'ContactUs',
@@ -25,8 +24,10 @@ const Navbar = () => {
   ];
 
   useEffect(() => {
-    // Apply the scroll effect
-    const cleanupScrollEffect = applyScrollEffect();
+    // Apply the scroll effect with a callback to set the logo
+    const cleanupScrollEffect = applyScrollEffect((color) => {
+      setLogo(color === 'black' ? logoBlack : logoWhite);
+    });
 
     // Cleanup the scroll effect when the component unmounts
     return () => {
@@ -119,7 +120,6 @@ const Navbar = () => {
     return score;
   };
 
-  
   return (
     <div className={"wrapper fadeDown"}>
       <nav>
@@ -131,7 +131,7 @@ const Navbar = () => {
         <div className="content">
           <div className="logo">
             <Link to="/">
-              <img src={image} alt="" />
+              <img src={logo} alt="Logo" />
             </Link>
           </div>
           <ul className="links">
@@ -142,10 +142,10 @@ const Navbar = () => {
             </li>
             <li>
               <Link className="desktop-link">
-                Services <i class="fa-solid fa-chevron-down" style={{color: "white"}}></i>
+                Services <i className="fa-solid fa-chevron-down" style={{color: "white"}}></i>
               </Link>
               <input type="checkbox" id="show-features" name="show-features" />
-              <label htmlFor="show-features">Services <i class="fa-solid fa-chevron-down" style={{color: "white"}}></i></label>
+              <label htmlFor="show-features">Services <i className="fa-solid fa-chevron-down" style={{color: "white"}}></i></label>
               <ul>
                 <li className='dropdown'>
                   <Link to="/houseCleaning" className={location.pathname === '/houseCleaning' ? 'active' : ''}>
@@ -184,7 +184,7 @@ const Navbar = () => {
           </ul>
         </div>
         <label htmlFor="show-search" className="search-icon">
-          <i className="fas fa-search" style={{color: "white",}}></i>
+          <i className="fas fa-search" style={{color: "white"}}></i>
         </label>
         <form className="search-box" onSubmit={handleFormSubmit}>
           <input
@@ -195,7 +195,7 @@ const Navbar = () => {
             onChange={handleSearch}
           />
           <button type="submit" className="go-icon">
-            <i className="fas fa-long-arrow-alt-right"></i>
+            <i className="fas fa-long-arrow-alt-right" style={{color: "white"}}></i>
           </button>
           {searchResults.length > 0 && (
           <div className="search-results">

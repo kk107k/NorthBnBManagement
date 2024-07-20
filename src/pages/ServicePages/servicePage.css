@@ -18,9 +18,16 @@
 }
 
 .service-page__container-left {
+    position: sticky;
     width: 270px;
 }
 
+.sevice-page__container-right ul li {
+    list-style: decimal;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.9);
+}
 
 @media screen and (max-width: 650px) {
     .service-page__container-content {

@@ -1,7 +1,7 @@
 import React from 'react'
 import './servicePageComponent.css'
 
-const ServicePageComponent = ({heading,text,text2,listText,list,image}) => {
+const ServicePageComponent = ({heading,text,text2,listText,list,finalText,image}) => {
   return (
     <div className='service-page-component__container'>
       <h2>{heading}</h2>
@@ -9,6 +9,7 @@ const ServicePageComponent = ({heading,text,text2,listText,list,image}) => {
       <p>{text2}</p>
       <p>{listText}</p>
       <p>{list}</p>
+      <p>{finalText}</p>
       <img src={image} />
     </div>
   )

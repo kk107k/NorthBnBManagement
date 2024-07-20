@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom'
-import logo from '../../assets/northbnb_logo.png'
+import { logoBlack } from '../../assets';
 import {useState, useEffect} from 'react'
 const arrow = <i class="fa-solid fa-caret-right"></i>
 
@@ -63,7 +63,7 @@ const Footer = () => {
         <div className='footer__container-content-content'>
         <div className='footer__container-content-information'>
           <div className='footer__container-content-information-logo'>
-          <img src={logo} id='logo' />
+          <img src={logoBlack} id='logo' />
           </div>
             <div className='footer__container-content-information-location'>
                 <a href='https://www.google.com/maps/dir//Al+Safa+Buildings+-+Sheikh+Zayed+Rd+-+Dubai+-+United+Arab+Emirates/@25.1776728,55.2106686,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3e5f69e8650a6b71:0x3e8f3a65ac153a10!2m2!1d55.2456883!2d25.1775992?entry=ttu'>

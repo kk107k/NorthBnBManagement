@@ -27,7 +27,7 @@ export const servicesData = [
       {
         img: increase,
         title: "Increased Occupancy Rates",
-        text: "We will help you increase your property's occupancy rates. We will help you get more bookings and make more money.",
+        text: "Maximize your property's potential with our proven strategies to boost occupancy rates. We leverage dynamic pricing, SEO optimization, and targeted marketing campaigns to keep your property booked year-round.",
         link: '/OccupancyRate'
       },
       {
@@ -38,8 +38,8 @@ export const servicesData = [
       },
     {
         img: cleaning,
-        title: "Home Cleaning",
-        text: "We will help you clean your property. We will make sure that your property is clean and ready for your guests",
+        title: "House Cleaning",
+        text: "Impress your guests with spotless accommodations through our professional cleaning and housekeeping services. We ensure your property is thoroughly cleaned and perfectly prepared for each new guest.",
         link: '/HouseCleaning'
       },
     {
@@ -50,8 +50,8 @@ export const servicesData = [
       },
     {
         img: support,
-        title: "24/7 Support",
-        text: "We will provide you with 24/7 support. We will be there to help you with any questions or concerns that you may have",
+        title: "24/7 Guest Support",
+        text: "Ensure your guests have a seamless and enjoyable stay with our round-the-clock support services. We are available day and night to address any questions or concerns, providing peace of mind for both you and your guests.",
         link: '/CustomerSupport'
       }
 ]

@@ -15,17 +15,6 @@
     
 }
 
-.service-page-component__container li{
-    margin-bottom: 3px;
-}
-
-.service-page-component__container li::before {
-    content: "•";
-    display: inline-block;
-    font-size: 1.1rem;
-    width: 10px; 
- }
-
  .service-page-component__container img {
         width: 100%;
         height: 100%;
